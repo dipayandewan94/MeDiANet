@@ -5,7 +5,7 @@ This repository contains the `main_mdnet` script, which is designed for both tra
 ### 1. Framework Selection (`--framework`):
 - `pytorch`: Choose this to run the script using the PyTorch framework.
 - `tensorflow`: Choose this to run the script using the TensorFlow framework.
-- The Pytorch and TensorFlow models should be run in separate Conda environments
+- The Pytorch and TensorFlow models should be run in separate Conda environments.
 
 ### 2. Model Selection (`--model`):
 - `69`: Use model 69 for training.
@@ -13,7 +13,7 @@ This repository contains the `main_mdnet` script, which is designed for both tra
 
 ### 3. Evaluation Mode (`--eval`):
 - `69` or `117`: If the `--eval` argument is specified with either `69` or `117`, the script will run in evaluation mode for the respective model.
-- Only needed for TensorFlow
+- Only needed for TensorFlow.
 
 ---
 

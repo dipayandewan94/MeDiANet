@@ -39,4 +39,17 @@ There is no need for an explicit --eval argument when using PyTorch.
 
 
 ## Example Commands:
+- Train MeDiANet-69 with TensorFlow:
+```bash
+python main_mdnet.py --framework tensorflow --model 69
+```
 
+- Train and evaluate MeDiANet-117 with TensorFlow: 
+```bash
+python main_mdnet.py --framework tensorflow --model 117 --eval 117
+```
+
+- Train and evaluate MeDiANet-69 with PyTorch:
+```bash
+python main_mdnet.py --framework pytorch --model 69
+```

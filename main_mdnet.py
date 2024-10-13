@@ -4,8 +4,8 @@ if __name__ == "__main__":
     import os
 
 
-    sys.path.append(os.path.join(os.path.dirname(__file__), 'tensorflow_mdnet'))
-    sys.path.append(os.path.join(os.path.dirname(__file__), 'pytorch_mdnet'))
+    sys.path.append(os.path.join(os.path.dirname(__file__), 'MeDiANet_TensorFlow'))
+    sys.path.append(os.path.join(os.path.dirname(__file__), 'MeDiANet_PyTorch'))
 
     # import train_69
     # import train_117

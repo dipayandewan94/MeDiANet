@@ -1,6 +1,21 @@
-This repository contains the `main_mdnet` script, which is designed for both training and evaluating machine learning models. The script accepts three arguments: `--framework`, `--model`, and `--eval`. Below is a detailed guide on how to use the script.
+## Dataset:
+After downloading the dataset, follow these steps:
+
+1. **Extract the Dataset:**
+   - Unzip or extract the downloaded dataset to a desired location on your computer.
+
+2. **Update Dataset Paths:**
+   - You need to modify the dataset paths in the respective dataloader scripts for both TensorFlow and PyTorch.
+
+### TensorFlow:
+- In the TensorFlow dataloader file, locate **lines 55, 56, and 57**. Replace these lines with the path to the `train`, `validation`, and `test` folders on your computer.
+
+### PyTorch:
+- In the PyTorch dataloader file, go to line 7 and provide the path to the dataset folder.
+
 
 ## Usage
+This repository contains the `main_mdnet` script, which is designed for both training and evaluating machine learning models. The script accepts three arguments: `--framework`, `--model`, and `--eval`. Below is a detailed guide on how to use the script.
 
 ### 1. Framework Selection (`--framework`):
 - `pytorch`: Choose this to run the script using the PyTorch framework.

@@ -15,7 +15,7 @@ After downloading the dataset, follow these steps:
 
 
 ## Usage
-This repository contains the `main_mdnet` script, which is designed for both training and evaluating machine learning models. The script accepts three arguments: `--framework`, `--model`, and `--eval`. Below is a detailed guide on how to use the script.
+This repository contains the `main_mdnet` script, which is designed for both training and evaluating machine learning models. The script accepts three arguments: `--framework`, `--model`, and `--eval`. Below is a detailed guide on how to use the script. **Note:** The results presented in the paper are based solely on the TensorFlow model. The PyTorch implementation has not been tested as of the most recent update.
 
 ### 1. Framework Selection (`--framework`):
 - `pytorch`: Choose this to run the script using the PyTorch framework.

@@ -2,7 +2,7 @@ def eval():
     import os
     os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"   # see issue #152
     os.environ["CUDA_VISIBLE_DEVICES"]="1"
-    #os.environ["TF_USE_LEGACY_KERAS"] = "1"
+    os.environ["TF_USE_LEGACY_KERAS"] = "1"
 
     import tensorflow as tf
     gpus = tf.config.experimental.list_physical_devices('GPU')
@@ -42,8 +42,8 @@ def eval():
         
 
     tf.keras.config.enable_unsafe_deserialization()
-    # saved_model = load_model('/home/dipayan/MwDiANetLarge2.tf')
-    saved_model = load_model(model_path, custom_objects={'Mish': Mish})
+    saved_model = load_model(model_path)
+    #saved_model = load_model(model_path, custom_objects={'Mish': Mish})
 
     _, test_acc = saved_model.evaluate(test_data, verbose=1)
     print('Test: %.5f' % (test_acc))

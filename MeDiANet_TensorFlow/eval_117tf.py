@@ -29,7 +29,7 @@ def eval():
     from tensorflow.keras import layers
     from tensorflow.keras.activations import mish, gelu
 
-    model_path = '/saved_models/tensorflow/MeDiANet_base_69.tf' 
+    model_path = '/saved_models/tensorflow/MeDiANet_base_117.tf' 
     
     test_path = '/newdataset/test/'
 

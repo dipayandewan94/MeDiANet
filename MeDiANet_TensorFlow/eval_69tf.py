@@ -35,10 +35,6 @@ def eval():
     batch_size = 512
 
     test_data = create_dataset(test_path, batch_size=batch_size, shuffle=False)
-
-    class Mish(layers.Layer):
-        def call(self, x):
-            return mish(x)
         
 
     tf.keras.config.enable_unsafe_deserialization()
